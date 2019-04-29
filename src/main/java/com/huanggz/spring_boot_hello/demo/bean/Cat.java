@@ -10,13 +10,13 @@ import javax.persistence.Id;
 public class Cat {
 	@Id @GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	private String name;
+	private String catName;
 	private int age;
 	public int getId() {
 		return id;
 	}
-	public String getName() {
-		return name;
+	public String getCatName() {
+		return catName;
 	}
 	public int getAge() {
 		return age;
@@ -24,8 +24,8 @@ public class Cat {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setCatName(String catName) {
+		this.catName = catName;
 	}
 	public void setAge(int age) {
 		this.age = age;
